@@ -1,1809 +1,1167 @@
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 -->
-<!DOCTYPE html>
-<html lang="zxx">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title> Webzine Entertainment & Blog Category Responsive Website Template | Home </title>
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/style-starter.css">
-  <!-- Template CSS -->
-  <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,800&display=swap" rel="stylesheet">
-  <!-- Template CSS -->
+    <title>NewsBlog a Blog Category Bootstrap Responsive Website Template | Home : W3layouts</title>
+
+    <link href="//fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    
+    <style>
+        .tab-style{
+font-size:20px;
+width:50%;
+background-color:#f2f2f2;
+  text-align:center;
+  
+
+}
+.nav-tabs > li > a {
+    margin-right: 0px;
+    color:grey;
+}
+
+        .group2 { 
+  position: relative; 
+  margin-top: 16px; 
+}
+
+.btn-block{margin-top:20px;
+margin-bottom:20px;
+font-size:18px;}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {   background-color:#e5ecf4;
+color:#4a89dc;}
+
+.login-shadow{-webkit-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+-moz-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+  z-index:1;
+   
+}
+
+.signup-shadow{-webkit-box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+-moz-box-shadow: -5px -5px 6px 0px rgba(82,82,82,0.52);
+box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+  
+}
 
 
-</head>
+.modal-header{background-color:#e5ecf4;}
 
-<body>
-<!-- Headers-4 block -->
-<section class="w3l-header-6-main mobile-header">
-    <div class="header-section-hny">
-        <div class="header-top">
-            <div class="container">
-                <!-- /header-top-inn-->
-                <div class="header-inn-top row">
-                    <div class="logo-brand col-6">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" alt="" title="Webzine" style="max-height:30px;width:100%;" />
-                        </a>
+.group { 
+  position: relative; 
+  margin-top: 30px; 
+}
+
+
+.input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  background: none;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+
+.input:focus { outline: none; }
+
+
+/* Label */
+
+.label {
+  color: #757575; 
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: -10px;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+
+
+/* active */
+
+.input:focus ~ .label, .input.used ~ .label {
+  top: -20px;
+  transform: scale(.75); left:-15px;
+  /* font-size: 14px; */
+  color: #4a89dc;
+}
+
+
+/* Underline */
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px; 
+  width: 0;
+  bottom: 1px; 
+  position: absolute;
+  background: #4a89dc; 
+  transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* active */
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after { width: 50%; }
+
+
+/* Highlight */
+
+.highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+/* active */
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+
+@media  screen and (max-width: 767px) and (min-width: 576px){
+  #myModal{margin-left:20%;
+            margin-right:20%;}
+
+  #forgot-password{margin-left:20%;
+            margin-right:20%;}
+} 
+
+
+@media screen and (min-width: 768px) {
+  
+  #myModal .modal-dialog  {width:500px;}
+  
+  #forgot-password .modal-dialog{width:500px;}
+  
+  .modal-body{padding-left:50px;
+              padding-right:50px;}
+}
+
+
+.modal-body{background-image:url('http://res.cloudinary.com/rinma/image/upload/v1500489833/Airplane-flying-desktop-pictureproba2_rlcced.jpg');
+background-size:cover;
+z-inedx:4;}
+
+em{display:none;}
+
+    </style>
+  </head>
+  <body>
+<!-- header -->
+<header class="w3l-header">
+	<div class="container">
+	<!--/nav-->
+	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-sm-3 px-0">
+			<a class="navbar-brand" href="index.html">
+				<span class="fa fa-newspaper-o"></span> NewsBlog</a>
+			<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+
+			
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<span class="fa icon-expand fa-bars"></span>
+				<span class="fa icon-close fa-times"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<nav class="mx-auto">
+					<div class="search-bar">
+						<form class="search">
+							<input type="search" class="search__input" name="search" placeholder="Discover news, articles and more"
+								onload="equalWidth()" required>
+							<span class="fa fa-search search__icon"></span>
+						</form>
+					</div>
+				</nav>
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item dropdown @@pages__active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							More <span class="fa fa-angle-down"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item @@b__active" href="beauty.html">Beauty</a>
+							<a class="dropdown-item @@fa__active" href="fashion.html">Fashion & Style</a>
+						</div>
+					</li>
+					<li class="nav-item @@contact__active">
+						<a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item @@contact__active">
+						<a href="#signup" data-toggle="modal" data-target=".log-sign" class="nav-link">Register</a>
+					</li>
+				</ul>
+			</div>
+			<!-- toggle switch for light and dark theme -->
+			<div class="mobile-position">
+				<nav class="navigation">
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox">
+							<div class="mode-container">
+								<i class="gg-sun"></i>
+								<i class="gg-moon"></i>
+							</div>
+						</label>
+					</div>
+				</nav>
+			</div>
+			<!-- //toggle switch for light and dark theme -->
+		</div>
+	</nav>
+	<!--//nav-->
+</header>
+<!-- //header -->
+<!-- /homeblock1-->
+<section class="w3l-homeblock1 py-sm-5 py-4">
+    <div class="container py-md-4">
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            <div class="col-lg-3 col-6 grids-feature">
+                <a href="beauty.html">
+                    <div class="area-box">
+                        <span class="fa fa-bath"></span>
+                        <h4 class="title-head">Beauty</h4>
                     </div>
-                    <div class="menu-overlay-left col-6 ml-auto">
-                        <div class="two-pops d-flex">
-                            <a href="#" class="author-user"><span class="fa fa-user"
-                                    aria-hidden="true"></span></a>
-
-
-                            <!-- overlay-menuv-menu -->
-                            <div class="overlay-menuv-hny">
-                                <input type="checkbox" id="op"></input>
-                                <div class="side-menu-hny">
-                                    <label for="op" class="menuopen">
-                                        <span class="fa fa-bars" aria-hidden="true"></span></label>
-                                </div>
-                                <div class="overlay-menuv overlay-menuv-hugeinc">
-                                    <label for="op" class="menuclose"><span class="fa fa-times"
-                                            aria-hidden="true"></span></label>
-                                    <div class="side-show-content text-left">
-
-                                        <div class="quick-links-side gap-top">
-                                            <h3 class="side-title">About Webzine</h3>
-                                            <p> Lorem ipsum dolor sit amet, adipi scingelit. Vestibulum orci justo,
-                                                vehicula vel sapien sit amet.
-                                            </p>
-
-                                        </div>
-
-                                        <div class="quick-links-side gap-top">
-                                            <h3 class="side-title">Top Authors</h3>
-                                            <ul>
-                                                <li><a href="#">John Smith</a></li>
-                                                <li><a href="#">Jackson</a></li>
-                                                <li><a href="#">Lucas Smith</a></li>
-                                                <li><a href="#">Daniel Doe</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="quick-links-side gap-top">
-                                            <h3 class="side-title">Categories</h3>
-                                            <ul>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="lifestyle.html">Lifestyle</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                                <li><a href="#">Author</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="quick-links-side follow-us gap-top">
-                                            <h3 class="side-title">Follow Us</h3>
-                                            <ul class="social-icons-top">
-                                                <li><a class="facebook" href="#"><span class="fa fa-facebook"
-                                                            aria-hidden="true"></span></a>
-                                                </li>
-                                                <li><a class="twitter" href="#"><span class="fa fa-twitter"
-                                                            aria-hidden="true"></span></a></li>
-                                                <li><a class="google" href="#"><span class="fa fa-google-plus"
-                                                            aria-hidden="true"></span></a>
-                                                </li>
-                                                <li><a class="instagram" href="#"><span class="fa fa-instagram"
-                                                            aria-hidden="true"></span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="search-right">
-
-                                <a href="#search" title="search"><span class="fa fa-search"
-                                        aria-hidden="true"></span></a>
-                                <!-- search popup -->
-
-
-                                <div id="search" class="pop-overlay">
-                                    <div class="popup">
-
-                                        <form action="#" method="post" class="search-box">
-                                            <input type="search" placeholder="Keyword" name="search" required="required"
-                                                autofocus="">
-                                            <button type="submit" class="btn mt-3">Search</button>
-                                        </form>
-
-                                    </div>
-
-                                    <a class="close" href="#">×</a>
-                                </div>
-                                <!-- /search popup -->
-                            </div>
-                        </div>
-                        <!-- overlay-menuv-menu -->
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature">
+                <a href="fashion.html">
+                    <div class="area-box">
+                        <span class="fa fa-female"></span>
+                        <h4 class="title-head">Fashion and style</h4>
                     </div>
-                </div>
-                <!-- //header-top-inn-->
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
+                <a href="#food">
+                    <div class="area-box">
+                        <span class="fa fa-cutlery"></span>
+                        <h4 class="title-head">Food and wellness</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
+                <a href="#lifsetyle">
+                    <div class="area-box">
+                        <span class="fa fa-pie-chart"></span>
+                        <h4 class="title-head">Lifestyle</h4>
+                    </div>
+                </a>
             </div>
         </div>
-        <header class="header-hny-block">
-            <div class="container">
-                 <!-- /.nav-collapse -->
-                 <nav class="navbar navbar-expand-lg navbar-light">
-                      
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mr-lg-auto">
-                           
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       Home</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Home</a>
-                                        <a class="dropdown-item" href="home-1.html">Home V1</a>
-                                    </div>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="lifestyle.html">Lifestyle</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Food</a>
-							   </li>
-                               
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <div class="social-right">
-                                    <ul class="social-icons-top">
-                                        <li><a class="facebook" href="#"><span class="fa fa-facebook"
-                                                    aria-hidden="true"></span></a>
+    </div>
+</section>
+<!-- //homeblock1-->
+
+<section class="w3l-testimonials" id="testimonials">
+    <!-- main-slider -->
+    <div class="testimonials pt-2 pb-5">
+        <div class="container pb-lg-5">
+            <div class="owl-testimonial owl-carousel owl-theme mb-md-0 mb-sm-5 mb-4">
+                <div class="item">
+                    <div class="row slider-info">
+                        <div class="col-lg-8 message-info align-self">
+                            <span class="label-blue mb-sm-4 mb-3">Beauty</span>
+                            <h3 class="title-big mb-4">Create an Art that shows the beauty in everyone’s ideas of flaws.
+                            </h3>
+                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
+                                scelerisque sem feugiat. Nulla in eros purus.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
+                            <img src="assets/images/beauty.jpg" class="img-fluid radius-image-full" alt="client image">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-info">
+                        <div class="col-lg-8 message-info align-self">
+                            <span class="label-blue mb-sm-4 mb-3">Fashion and Style</span>
+                            <h3 class="title-big mb-4">Addicted to Fashion is the Armor to survive the reality of
+                                Everyday Life.
+                            </h3>
+                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
+                                scelerisque sem feugiat. Nulla in eros purus.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
+                            <img src="assets/images/fashion.jpg" class="img-fluid radius-image-full" alt="client image">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-info">
+                        <div class="col-lg-8 message-info align-self">
+                            <span class="label-blue mb-sm-4 mb-3">Food and Wellness</span>
+                            <h3 class="title-big mb-4">Create healthy habits, not restrictions. Wellness is a taste of
+                                being.
+                            </h3>
+                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
+                                scelerisque sem feugiat. Nulla in eros purus.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
+                            <img src="assets/images/food.jpg" class="img-fluid radius-image-full" alt="client image">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-info">
+                        <div class="col-lg-8 message-info align-self">
+                            <span class="label-blue mb-sm-4 mb-3">Lifestyle</span>
+                            <h3 class="title-big mb-4">To succeed in Life, you need 3 things : a wishbone, a backbone, a
+                                funny bone.
+                            </h3>
+                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
+                                scelerisque sem feugiat. Nulla in eros purus.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
+                            <img src="assets/images/lifestyle.jpg" class="img-fluid radius-image-full"
+                                alt="client image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /main-slider -->
+</section>
+<div class="w3l-homeblock2 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="section-title-left mb-4"> Editor's Pick </h3>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 item">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single.html">
+                                    <img class="card-img-bottom d-block radius-image-full"
+                                        src="assets/images/image1.jpg" alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <span class="label-blue">Beauty</span>
+                                <a href="#blog-single.html" class="blog-desc">The 3 Eyeshadow palettes I own & How to
+                                    downsize your stash
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
+                                    vitae sit.</p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="author.html">Isabella ava</a> </a>
                                         </li>
-                                        <li><a class="twitter" href="#"><span class="fa fa-twitter"
-                                                    aria-hidden="true"></span></a></li>
-                                        <li><a class="google" href="#"><span class="fa fa-google-plus"
-                                                    aria-hidden="true"></span></a>
-                                        </li>
-                                        <li><a class="instagram" href="#"><span class="fa fa-instagram"
-                                                    aria-hidden="true"></span></a>
+                                        <li class="meta-item blog-lesson">
+                                            <span class="meta-value"> July 13, 2020 </span>. <span
+                                                class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
                         </div>
-                    </nav>
-
-                <!-- /.nav-collapse -->
-        </header>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-md-0 mt-sm-5 mt-4">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#blog-single.html">
+                                    <img class="card-img-bottom d-block radius-image-full"
+                                        src="assets/images/image2.jpg" alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body blog-details">
+                                <span class="label-blue">Fashion</span>
+                                <a href="#blog-single.html" class="blog-desc">2 New outfit formulas to add to your
+                                    Capsule Wardrobe
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
+                                    vitae sit.</p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="author.html">Charlotte mia</a> </a>
+                                        </li>
+                                        <li class="meta-item blog-lesson">
+                                            <span class="meta-value"> July 13, 2020 </span>. <span
+                                                class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 left-right bg-clr-white p-3">
+                    <h3 class="section-title-left align-self pl-2 mb-sm-0 mb-3">Advertise with us </h3>
+                    <a class="btn btn-style btn-primary" href="#url">Learn more</a>
+                </div>
+            </div>
+            <div class="col-lg-4 trending mt-lg-0 mt-5">
+                <div class="topics">
+                    <h3 class="section-title-left mb-4"> Topics</h3>
+                    <a href="beauty.html" class="topics-list">
+                        <div class="list1">
+                            <span class="fa fa-bath"></span>
+                            <h4>Beauty</h4>
+                        </div>
+                    </a>
+                    <a href="fashion.html" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-female"></span>
+                            <h4>Fashion and style</h4>
+                        </div>
+                    </a>
+                    <a href="#food" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-cutlery"></span>
+                            <h4>Food and wellness</h4>
+                        </div>
+                    </a>
+                    <a href="#lifestyle" class="topics-list mt-3">
+                        <div class="list1">
+                            <span class="fa fa-pie-chart"></span>
+                            <h4>Lifestyle</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="sponsers mt-5">
+                    <h3 class="section-title-left mb-4"> Our sponsers</h3>
+                    <a href="#ad-banner"><img src="assets/images/ad.jpg" alt="" class="img-fluid radius-image-full" /></a>
+                    <a href="#advertise" class="text-center d-block text-uppercase">Advertise with us </a>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-<!--w3l-banner-slider-main-->
-<section class="w3l-banner-slider-main">
-	<div class="container">
-		<div class="content-baner-inf">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="carousel-caption">
-							<h3>A New Report Shows That Fashion Ads Are Still Overwhelmingly White Dresses</h3>
-							<p>Lorem ipsum dolor sit amet,Vestibulum orci justo, vehicula vel sapien sit amet.</p>
-							<div class="date-caption">
-								 20.Dec.2019
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item item2">
-							<div class="carousel-caption">
-									<h3>Santorini, Greece white and blue painted buildings near body of water</h3>
-									<p>Lorem ipsum dolor sit amet,Vestibulum orci justo, vehicula vel sapien sit amet.</p>
-									<div class="date-caption">
-										 22.Dec.2019
-										</div>
-								</div>
-					</div>
-					<div class="carousel-item item3">
-							<div class="carousel-caption">
-									<h3>Penguins on snow covered ground,Looking Awesome to see</h3>
-									<p>Lorem ipsum dolor sit amet,Vestibulum orci justo, vehicula vel sapien sit amet.</p>
-									<div class="date-caption">
-											23.Dec.2019
-									</div>
-								</div>
-					</div>
-					<div class="carousel-item item4">
-							<div class="carousel-caption">
-									<h3>7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims</h3>
-									<p>Lorem ipsum dolor sit amet,Vestibulum orci justo, vehicula vel sapien sit amet.</p>
-									<div class="date-caption">
-											25.Dec.2019
-										</div>
-								</div>
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	
-</section>
-<!-- //w3l-banner-slider-main -->
-<section class="w3l-mag-main">
-	<!--/mag-content-->
-	<div class="mag-content-inf py-5">
-		<div class="container">
-			<div class="banner-bottom-sechny py-md-4">
-				<h3 class="hny-title text-center">Recent <span>News</span></h3>
-				<div class="ban-content-inf row py-lg-3">
-					<div class="maghny-gd-1 col-lg-6">
-						<div class="maghny-grid">
-							<figure class="effect-lily">
-								<img class="img-fluid" src="assets/images/grid20.jpg" alt="">
-								<figcaption class="w3set-hny">
-									<div>
-										<h4 class="top-text">Man in black jacket and brown hat standing on rock
-											<span>near lake</span></h4>
-										<p>Jan.20.2020 </p>
-									</div>
-
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-					<div class="maghny-gd-1 col-lg-6">
-						<div class="row">
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid7.jpg">
-										<figcaption>
-											<div>
-												<h4>woman near <span>pigeons</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5 class="top-title"><a href="#">There are many variations that focuses on
-										presenting</a></h5>
-
-								<div class="mag-post-meta mt-3"><span
-										class="meta-author text-uppercase"><span>By&nbsp;</span><a href="#"
-											class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<a href="#" class="read-more btn mt-3">Read More</a>
-							</div>
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid8.jpg">
-										<figcaption>
-											<div>
-												<h4>Man standing on railroad near <span>plants</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5 class="top-title"><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<div class="mag-post-meta mt-3"> <span
-										class="meta-author text-uppercase"><span>By&nbsp;</span><a href="#"
-											class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<a href="#" class="read-more btn mt-3">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="blog-inner-grids py-md-4 row">
-				<div class="mag-content-left-hny col-lg-8">
-					<!--/mag-hny-content-1-->
-					<div class="mag-hny-content">
-						<h3 class="hny-title">Latest <span>Articles</span></h3>
-						<!--/mag-left-grid-1-->
-						<div class="maghny-grids-inf row">
-							<div class="maghny-gd-1 col-lg-4 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid1.jpg" alt="">
-										<figcaption>
-											<div>
-												<h4>Man holding camera and woman playing <span>violin</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-lg-4 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid2.jpg" alt="">
-										<figcaption>
-											<div>
-												<h4>Adult beautiful breakfast <span>brunette</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-
-								<div class="mag-post-meta mt-3"> <a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img" alt=""></a><span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-lg-4 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid3.jpg" alt="">
-										<figcaption>
-											<div>
-												<h4>Man in black shorts on <span>boat end</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--//mag-hny-content-1-->
-					<!--//mag-left-grid-1-->
-					<div class="mag-hny-content my-lg-5">
-						<h3 class="hny-title">Great <span>lifestyle</span></h3>
-						<!--/mag-left-grid-1-->
-						<div class="maghny-grids-inf row">
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid4.jpg" alt="">
-										<figcaption>
-											<div>
-												<h4>Sittin people beside table inside <span> room</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
-								<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid5.jpg">
-										<figcaption>
-											<div>
-												<h4>Tidy Room Filled with <span>furniture</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
-								<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a><span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-						</div>
-						<!--/mag-sub-grids-->
-						<div class="row mng-front-cont mt-5">
-							<div class="mag-small-post col-md-6">
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m1.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a> </h4>
-										<div class="mag-post-meta mt-3"> <span
-												class="meta-author"><span>By&nbsp;</span><a href="#"
-													class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m2.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-										<div class="mag-post-meta mt-3"> <span
-												class="meta-author"><span>By&nbsp;</span><a href="#"
-													class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m3.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a> </h4>
-
-										<div class="mag-post-meta"> <span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m4.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-										<div class="mag-post-meta"> <span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-							<div class="mag-small-post col-md-6">
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m12.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a> </h4>
-
-										<div class="mag-post-meta"> <span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m9.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-										<div class="mag-post-meta"> <span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m10.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a> </h4>
-
-
-										<div class="mag-post-meta"> <span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m11.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-										<div class="mag-post-meta"> <span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name"> John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--//mag-sub-grids-->
-					</div>
-					<!--//mag-left-grid-2-->
-					<!--/mag-hny-content-1-->
-					<div class="mag-hny-content my-lg-5 mt-5">
-						<h3 class="hny-title">From <span>Beatuty</span></h3>
-						<!--/mag-left-grid-1-->
-						<div class="maghny-grids-inf row">
-							<div class="maghny-gd-1 col-lg-4 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid6.jpg">
-										<figcaption>
-											<div>
-												<h4>Person lying down on white <span>surface</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-lg-4 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid7.jpg">
-										<figcaption>
-											<div>
-												<h4>woman near <span>pigeons</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">There are many variations that focuses on presenting</a></h5>
-
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-lg-4 col-md-6">
-								<div class="maghny-grid">
-									<figure class="effect-lily">
-										<img class="img-fluid" src="assets/images/grid8.jpg">
-										<figcaption>
-											<div>
-												<h4>Man standing on railroad near <span>plants</span></h4>
-												<p>Jan.20.2020 </p>
-											</div>
-
-										</figcaption>
-									</figure>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--//mag-hny-content-1-->
-					<!--/mag-hny-content-3-->
-					<div class="mag-hny-content mb-5">
-						<h3 class="hny-title">Tech and <span>Gadgets</span></h3>
-						<div class="maghny-grids-inf row">
-							<div class="mag-post-thumb col-md-6">
-								<a href="#"><img src="assets/images/grid9.jpg" class="img-fluid" alt=""></a>
-
-							</div>
-							<div class="mag-post-fashion-details col-md-6 mt-md-0 mt-4">
-								<a href="#" class="link-mag">
-									<h4 class="mag-post-head">
-										There are many variations that focuses on presenting</h4>
-								</a>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"> <span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<p class="para my-3">Nulla quis lorem neque, mattis venenatis lectus. In interdum
-									ullamcorper dolor eu
-									mattis.Nulla quis lorem neque, mattis venenatis lectus. </p>
-								<a href="#" class="read-more btn">Read More</a>
-
-							</div>
-
-
-						</div>
-						<div class="maghny-grids-inf row my-5">
-							<div class="mag-post-thumb col-md-6">
-								<a href="#"><img src="assets/images/grid10.jpg " class="img-fluid" alt=""></a>
-
-							</div>
-							<div class="mag-post-fashion-details col-md-6 mt-md-0 mt-4">
-								<a href="#" class="link-mag">
-									<h4 class="mag-post-head">
-										There are many variations that focuses on presenting</h4>
-								</a>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<p class="para my-3">Nulla quis lorem neque, mattis venenatis lectus. In interdum
-									ullamcorper dolor eu
-									mattis.Nulla quis lorem neque, mattis venenatis lectus. </p>
-								<a href="#" class="read-more btn">Read More</a>
-
-							</div>
-
-
-						</div>
-						<div class="maghny-grids-inf row">
-							<div class="mag-post-thumb col-md-6">
-								<a href="#"><img src="assets/images/grid5.jpg" class="img-fluid" alt=""></a>
-
-							</div>
-							<div class="mag-post-fashion-details col-md-6 mt-md-0 mt-4">
-								<a href="#" class="link-mag">
-									<h4 class="mag-post-head">
-										There are many variations that focuses on presenting</h4>
-								</a>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<p class="para my-3">Nulla quis lorem neque, mattis venenatis lectus. In interdum
-									ullamcorper dolor eu
-									mattis.Nulla quis lorem neque, mattis venenatis lectus. </p>
-								<a href="#" class="read-more btn">Read More</a>
-
-							</div>
-
-
-						</div>
-
-					</div>
-					<!--//mag-hny-content-3-->
-					<!--/mag-left-grid-6-->
-					<div class="mag-hny-content my-lg-5 mb-5">
-						<h3 class="hny-title">Top <span>Categories</span></h3>
-						<div class="fashny-grids-inf row">
-							<div class="fashion-gd-1 col-lg-4 col-6">
-								<div class="fas-gallery-grid">
-									<a href="#">
-										<div class="content">
-											<div class="content-overlay"></div>
-											<img src="assets/images/grid11.jpg" class="img-fluid" alt="">
-											<div class="content-details fadeIn-bottom">
-												<h4 class="content-title">Food</h4>
-
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="fashion-gd-1 col-lg-4 col-6">
-								<div class="fas-gallery-grid">
-									<a href="#">
-										<div class="content">
-											<div class="content-overlay"></div>
-											<img src="assets/images/grid12.jpg" class="img-fluid" alt="">
-											<div class="content-details fadeIn-bottom">
-												<h4 class="content-title">Fashion</h4>
-
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="fashion-gd-1 col-lg-4 col-6">
-								<div class="fas-gallery-grid">
-									<a href="#">
-										<div class="content">
-											<div class="content-overlay"></div>
-											<img src="assets/images/grid13.jpg" class="img-fluid" alt="">
-											<div class="content-details fadeIn-bottom">
-												<h4 class="content-title">Celebrities</h4>
-
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					<!--//mag-hny-content-6-->
-
-					<!--/mag-hny-content-3-->
-					<div class="mag-hny-content my-lg-5 mb-5">
-						<h3 class="hny-title">Trendy <span>Fashion</span></h3>
-						<div class="maghny-grids-inf row">
-							<div class="mag-post-thumb col-md-6">
-								<a href="#"><img src="assets/images/grid16.jpg" class="img-fluid" alt=""></a>
-
-							</div>
-							<div class="mag-post-fashion-details col-md-6 mt-md-0 mt-4">
-								<a href="#" class="link-mag">
-									<h4 class="mag-post-head">
-										There are many variations that focuses on presenting</h4>
-								</a>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"> <span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<p class="para my-3">Nulla quis lorem neque, mattis venenatis lectus. In interdum
-									ullamcorper dolor eu
-									mattis.Nulla quis lorem neque, mattis venenatis lectus. </p>
-								<a href="#" class="read-more btn">Read More</a>
-
-							</div>
-
-
-						</div>
-						<div class="maghny-grids-inf row my-5">
-							<div class="mag-post-thumb col-md-6">
-								<a href="#"><img src="assets/images/grid17.jpg " class="img-fluid" alt=""></a>
-
-							</div>
-							<div class="mag-post-fashion-details col-md-6 mt-md-0 mt-4">
-								<a href="#" class="link-mag">
-									<h4 class="mag-post-head">
-										There are many variations that focuses on presenting</h4>
-								</a>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<p class="para my-3">Nulla quis lorem neque, mattis venenatis lectus. In interdum
-									ullamcorper dolor eu
-									mattis.Nulla quis lorem neque, mattis venenatis lectus. </p>
-								<a href="#" class="read-more btn">Read More</a>
-
-							</div>
-
-
-						</div>
-						<div class="maghny-grids-inf row">
-							<div class="mag-post-thumb col-md-6">
-								<a href="#"><img src="assets/images/grid13.jpg" class="img-fluid" alt=""></a>
-
-							</div>
-							<div class="mag-post-fashion-details col-md-6 mt-md-0 mt-4">
-								<a href="#" class="link-mag">
-									<h4 class="mag-post-head">
-										There are many variations that focuses on presenting</h4>
-								</a>
-								<div class="mag-post-meta mt-3"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-								<p class="para my-3">Nulla quis lorem neque, mattis venenatis lectus. In interdum
-									ullamcorper dolor eu
-									mattis.Nulla quis lorem neque, mattis venenatis lectus. </p>
-								<a href="#" class="read-more btn">Read More</a>
-
-							</div>
-
-
-						</div>
-
-					</div>
-					<!--//mag-hny-content-3-->
-					<!--//mag-left-grid-5-->
-					<div class="mag-hny-content my-5">
-						<h3 class="hny-title">Tasty <span>Food</span></h3>
-						<!--/mag-left-grid-1-->
-						<div class="maghny-grids-inf row">
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid mb-3">
-									<a href="#"><img class="img-fluid" src="assets/images/grid14.jpg" alt=""></a>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
-								<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid mb-3">
-									<a href="#"><img class="img-fluid" src="assets/images/grid15.jpg" alt=""></a>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
-								<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a><span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--//mag-left-grid-5-->
-					<!--/social-->
-					<div class="mag-hny-content my-5">
-						<h3 class="hny-title">Stay <span>Connected</span></h3>
-						<!--/social-media-->
-						<div class="mag-small-post my-lg-3">
-							<div class="social-media-icons row">
-								<div class="grid-social-box col-lg-3 col-sm-6">
-									<a href="#" class="sub-facebook"><span class="fa fa-facebook"
-											aria-hidden="true"></span>
-										<div class="soc-info">
-											<span class="sub_social_info sub_social_info_counter">14,507</span>
-											<span class="sub_social_info sub_social_info_name">Followers</span>
-										</div>
-
-									</a>
-								</div>
-								<div class="grid-social-box col-lg-3 col-sm-6 ">
-									<a href="#" class="sub-facebook twitter"><span class="fa fa-twitter"
-											aria-hidden="true"></span>
-										<div class="soc-info">
-											<span class="sub_social_info sub_social_info_counter">14,507</span>
-											<span class="sub_social_info sub_social_info_name">Followers</span>
-										</div>
-									</a>
-								</div>
-								<div class="grid-social-box col-lg-3 col-sm-6 ">
-									<a href="#" class="sub-facebook google"><span class="fa fa-google"
-											aria-hidden="true"></span>
-										<div class="soc-info">
-											<span class="sub_social_info sub_social_info_counter">14,507</span>
-											<span class="sub_social_info sub_social_info_name">Followers</span>
-										</div>
-									</a>
-
-
-								</div>
-								<div class="grid-social-box col-lg-3 col-sm-6 ">
-									<a href="#" class="sub-facebook dribble"><span class="fa fa-dribbble"
-											aria-hidden="true"></span>
-										<div class="soc-info">
-											<span class="sub_social_info sub_social_info_counter">14,507</span>
-											<span class="sub_social_info sub_social_info_name">Followers</span>
-										</div>
-									</a>
-								</div>
-								<!--/social-media-->
-							</div>
-						</div>
-					</div>
-					<!--//social-->
-					<!--/health-->
-					<div class="mag-hny-content my-5">
-						<h3 class="hny-title">Be <span>Health</span></h3>
-						<!--/mag-left-grid-1-->
-						<div class="maghny-grids-inf row">
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid mb-3">
-									<a href="#"><img class="img-fluid" src="assets/images/grid18.jpg" alt=""></a>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
-								<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-							<div class="maghny-gd-1 col-md-6">
-								<div class="maghny-grid mb-3">
-									<a href="#"><img class="img-fluid" src="assets/images/grid19.jpg" alt=""></a>
-								</div>
-								<h5><a href="#">
-										There are many variations that focuses on presenting</a></h5>
-								<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
-								<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-											class="img-fluid rounded-circle admin-img admin-img1" alt=""></a><span
-										class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name"> John
-											Brain</a> </span>
-									<span class="author-date">Jan 5, 2020</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--//health-->
-					<!--/mag-hny-content-4-->
-					<div class="mag-hny-content my-lg-5">
-						<h3 class="hny-title">We're on <span>Instagram</span></h3>
-						<!--  Demos -->
-						<div id="demos">
-							<div class="owl-carousel owl-theme grid-col-4">
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid1.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid2.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid3.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid6.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid7.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid8.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid1.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid3.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-								<div class="item">
-									<a href="#link">
-										<div class="gallery-grid">
-											<div class="content">
-												<div class="content-overlay"></div>
-												<img src="assets/images/grid2.jpg" class="image-two img-fluid">
-
-											</div>
-										</div>
-
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--//mag-hny-content-4-->
-				</div>
-
-				<div class="mag-content-right-hny col-lg-4">
-					<aside>
-						<div class="side-bar-hny-recent mb-5">
-							<h4 class="mag-side-title">Must <span>Read</span></h4>
-							<div class="mag-small-post">
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m1.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">Group of women dancing on stage</a> </h4>
-
-										<div class="mag-post-meta"><span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name">John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m2.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">Photo of man wearing astronaut suit hanging near cameras</a>
-										</h4>
-
-										<div class="mag-post-meta"><span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name">John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m3.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">Pancake with chocolate syrup on ceramic plate</a> </h4>
-
-
-										<div class="mag-post-meta"><span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name">John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-4">
-										<a href="#"><img src="assets/images/m4.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-8">
-										<h4 class="mag-post-title">
-											<a href="#">White and pink petaled flowers on metal fence near
-												concrete</a>
-										</h4>
-
-
-										<div class="mag-post-meta"><span class="meta-author"><span>By&nbsp;</span><a
-													href="#" class="author-name">John Brain</a> </span>
-											<span class="author-date">Jan 5, 2020</span>
-										</div>
-									</div>
-								</div>
-
-
-
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<h4 class="mag-side-title">Top <span>Categories</span></h4>
-							<div class="mag-small-post">
-								<div class="post-item-grid align-items-center row mb-4">
-									<div class="mag-post-thumb col-3 pl-0">
-
-										<a href="#"><img src="assets/images/m11.jpg" class="img-fluid" alt=""></a>
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate">
-											<a href="#">Fashion</a> </h4>
-
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid align-items-center row mb-4">
-									<div class="mag-post-thumb col-3 pl-0">
-										<a href="#"><img src="assets/images/m10.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details align-items-center col-9">
-										<h4 class="mag-post-cate">
-											<a href="#">Culture</a>
-										</h4>
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid align-items-center row mb-4">
-									<div class="mag-post-thumb col-3 pl-0">
-
-										<a href="#"><img src="assets/images/m12.jpg" class="img-fluid" alt=""></a>
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate">
-											<a href="#">LifeStyle</a>
-										</h4>
-
-									</div>
-								</div>
-								<div class="post-item-grid align-items-center row mb-4">
-									<div class="mag-post-thumb col-3 pl-0">
-										<a href="#"><img src="assets/images/m9.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate">
-											<a href="#">Food</a>
-										</h4>
-
-
-
-									</div>
-								</div>
-
-
-								<div class="post-item-grid align-items-center row mb-4">
-									<div class="mag-post-thumb col-3 pl-0">
-										<a href="#"><img src="assets/images/m13.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate">
-											<a href="#">Business</a>
-										</h4>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<div class="mag-small-post">
-								<div class="mag-add-post">
-									<a href="#"><img src="assets/images/add.jpg" alt=""
-											class="img-fluid"></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="side-bar-hny-recent mb-5">
-							<h4 class="mag-side-title">Latest <span>Videos</span></h4>
-							<div class="mag-small-post">
-								<div class="post-video-grid">
-									<div class="video-content mb-3">
-										<a href="#notify" class="play-button btn"><span class="fa fa-play"
-												aria-hidden="true">
-
-											</span></a>
-
-										<!-- notify-popup-->
-										<div id="notify" class="notify-pop-overlay">
-											<div class="notify-popup">
-												<h5>Watch Our Video</h5>
-												<iframe src="https://player.vimeo.com/video/156953364" frameborder="0"
-													allow="autoplay; fullscreen" allowfullscreen></iframe>
-												<a class="close" href="#coming-s">&times;</a>
-											</div>
-										</div>
-										<!-- //notify-popup -->
-									</div>
-									<h4 class="mag-post-title">
-										<a href="#">A New Report Shows That Fashion Ads Are Still Overwhelmingly
-											White
-											Dresses</a> </h4>
-								</div>
-								<div class="post-video-grid mt-5 mb-lg-5">
-									<div class="video-content video-content2 mb-3">
-										<a href="#notify1" class="play-button btn"><span class="fa fa-play"
-												aria-hidden="true">
-
-											</span></a>
-
-										<!-- notify-popup-->
-										<div id="notify1" class="notify-pop-overlay">
-											<div class="notify-popup">
-												<h5>Watch Our Video</h5>
-												<iframe src="https://player.vimeo.com/video/42638891" frameborder="0"
-													allow="autoplay; fullscreen" allowfullscreen></iframe>
-												<a class="close" href="#coming-s">&times;</a>
-											</div>
-										</div>
-										<!-- //notify-popup -->
-									</div>
-									<h4 class="mag-post-title">
-										<a href="#">Penguins on snow covered gound,Looking Awesome to see</a> </h4>
-								</div>
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<h4 class="mag-side-title">Popular <span>Posts</span></h4>
-							<div class="mag-small-post">
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-
-										<h6 class="num-text">01</h6>
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-										<h6 class="num-text">02</h6>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-
-										<h6 class="num-text">03</h6>
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-										<h6 class="num-text">04</h6>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-
-									</div>
-								</div>
-
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-										<h6 class="num-text">05</h6>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-
-									</div>
-								</div>
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-										<h6 class="num-text">06</h6>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-
-									</div>
-								</div>
-
-								<div class="post-item-grid row mb-4">
-									<div class="mag-post-thumb col-3">
-										<h6 class="num-text">07</h6>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-title">
-											<a href="#">There are many variations that focuses on presenting</a>
-										</h4>
-
-
-
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<h4 class="mag-side-title">Recent <span>Comments</span></h4>
-							<div class="mag-small-post">
-								<div class="post-item-grid row mb-3">
-									<div class="mag-post-thumb-img col-3">
-										<a href="#"><img src="assets/images/t4.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate mb-2">
-											<a href="#">Anna Delpan</a> </h4>
-
-										<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit.</p>
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-3">
-									<div class="mag-post-thumb-img col-3">
-										<a href="#"><img src="assets/images/t1.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate mb-2">
-											<a href="#"> Daniel Doe</a>
-										</h4>
-										<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit.</p>
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-3">
-									<div class="mag-post-thumb-img col-3">
-										<a href="#"><img src="assets/images/t2.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate mb-2">
-											<a href="#">Steve Smith</a> </h4>
-
-										<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit.</p>
-
-									</div>
-								</div>
-
-
-
-								<div class="post-item-grid row mb-3">
-									<div class="mag-post-thumb-img col-3">
-										<a href="#"><img src="assets/images/t3.jpg" class="img-fluid" alt=""></a>
-
-									</div>
-									<div class="mag-post-details col-9">
-										<h4 class="mag-post-cate mb-2">
-											<a href="#">John Smith</a>
-										</h4>
-
-										<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit.</p>
-
-									</div>
-								</div>
-
-
-
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<div class="mag-small-post">
-								<div class="mag-add-post">
-									<a href="#"><img src="assets/images/add1.jpg" alt=""
-											class="img-fluid"></a>
-								</div>
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<h4 class="mag-side-title">Don't <span>Miss</span></h4>
-							<div class="mag-small-post dont-miss-grids-inf">
-								<div class="maghny-gd-1">
-									<div class="maghny-grid mb-3 dont-miss">
-										<a href="#"><img class="img-fluid" src="assets/images/m5.jpg" alt=""></a>
-									</div>
-									<h5><a href="#">
-											There are many variations that focuses on presenting</a></h5>
-									<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.
-									</p>
-									<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-												class="img-fluid rounded-circle admin-img admin-img1" alt=""></a> <span
-											class="meta-author"><span>By&nbsp;</span><a href="#"
-												class="author-name">John
-												Brain</a> </span>
-										<span class="author-date">Jan 5, 2020</span>
-									</div>
-								</div>
-								<div class="maghny-gd-1 my-lg-5">
-									<div class="maghny-grid mb-3 dont-miss">
-										<a href="#"><img class="img-fluid" src="assets/images/m6.jpg" alt=""></a>
-									</div>
-									<h5><a href="#">
-											There are many variations that focuses on presenting</a></h5>
-									<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.
-									</p>
-									<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-												class="img-fluid rounded-circle admin-img admin-img1" alt=""></a><span
-											class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">
-												John
-												Brain</a> </span>
-										<span class="author-date">Jan 5, 2020</span>
-									</div>
-								</div>
-								<div class="maghny-gd-1">
-									<div class="maghny-grid mb-3 dont-miss">
-										<a href="#"><img class="img-fluid" src="assets/images/m7.jpg" alt=""></a>
-									</div>
-									<h5><a href="#">
-											There are many variations that focuses on presenting</a></h5>
-									<p>Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.
-									</p>
-									<div class="mag-post-meta"><a href="#"><img src="assets/images/admin.jpg"
-												class="img-fluid rounded-circle admin-img admin-img1" alt=""></a><span
-											class="meta-author"><span>By&nbsp;</span><a href="#" class="author-name">
-												John
-												Brain</a> </span>
-										<span class="author-date">Jan 5, 2020</span>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<div class="side-bar-hny-recent mb-5">
-							<div class="mag-small-post">
-								<div class="mag-add-post">
-									<a href="#"><img src="assets/images/add3.jpg" alt=""
-											class="img-fluid"></a>
-								</div>
-							</div>
-						</div>
-					</aside>
-				</div>
-			</div>
-			<!--/newsletter-->
-			<div class="form-inner-newsletter py-lg-5">
-
-				<div class="newsletter-infhny p-md-5 p-4">
-					<div class="newsletter-inn-con p-lg-5">
-						<p>WE LIKE TO SHARE LATEST NEWS OF WEBZINE</p>
-						<h2>SUBSCRIBE NOW !</h2>
-
-						<form action="#" method="post" class="newsletter-form mt-md-5">
-							<div class="form-input">
-								<input type="email" name="email" class="form-control"
-									placeholder="Enter your email address" required="">
-							</div>
-							<div class="form-input mt-md-4 mt-3"><button class="btn">Subscribe</button></div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!--//newsletter-->
-		</div>
-	</div>
-	<!--//mag-content-->
-	<!-- /slider -->
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/grids.owl.carousel.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.owl-carousel').owlCarousel({
-				loop: true,
-				margin: 0,
-				responsiveClass: true,
-				autoplay: true,
-				autoplayTimeout: 2000,
-				autoplaySpeed: 1000,
-				autoplayHoverPause: true,
-				responsive: {
-					0: {
-						items: 1,
-						nav: false
-					},
-					480: {
-						items: 2,
-						nav: true,
-						margin: 20
-					},
-					667: {
-						items: 3,
-						nav: true,
-						margin: 20
-					},
-					1000: {
-						items: 5,
-						nav: true,
-						margin: 20
-					}
-				}
-			})
-		})
-	</script>
-	<!-- /slider -->
-</section>
-<!-- footer-66 -->
-<footer class="w3l-footer-66">
-    <section class="footer-inner-main py-md-5 py-5">
-        <div class="container">
-            <div class="footer-top row">
-                <div class="sub-one-left col-lg-4 col-md-6">
-                    <h6>About Webzine</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris.</p>
-                    <div class="columns-2">
-                        <ul class="social-footer">
-                            <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                            </li>
-                            <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                            </li>
-                            <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                            </li>
-                            <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-                            </li>
-
-                        </ul>
+</div>
+<div class="w3l-homeblock3 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <h3 class="section-title-left mb-4"> Top Pick's of this month </h3>
+        <div class="row top-pics">
+            <div class="col-lg-4 col-md-6">
+                <div class="top-pic1">
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">Fashion is
+                            Creating your Beauty image. The New fashion starts here
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Isabella ava</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="sub-two-right col-lg-4 col-md-6 my-md-0 my-5">
-                    <h6>Editor Pics</h6>
-                    <div class="row editor-pics mb-3">
-                        <div class="col-3 item-pic">
-                            <img src="assets/images/m4.jpg" class="img-fluid" alt="">
-
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="top-pic2">
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor Approved
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Charlotte mia</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-9 item-details">
-                            <a href="#">
-                                <h5 class="inner">More Than 120 ER Visits Linked To Synthetic WordPress In
-                                    NYC...</h5>
-                            </a>
-                            <div class="td-post-date">Jan 22, 2019</div>
-                        </div>
-
                     </div>
-                    <div class="row editor-pics mb-3">
-                        <div class="col-3 item-pic">
-                            <img src="assets/images/m1.jpg" class="img-fluid" alt="">
-
-                        </div>
-                        <div class="col-9 item-details">
-                            <a href="#">
-                                <h5 class="inner">More Than 120 ER Visits Linked To Synthetic WordPress In
-                                    NYC...</h5>
-                            </a>
-                            <div class="td-post-date">Jan 22, 2019</div>
-                        </div>
-
-                    </div>
-                    <div class="row editor-pics mb-3">
-                        <div class="col-3 item-pic">
-                            <img src="assets/images/m3.jpg" class="img-fluid" alt="">
-
-                        </div>
-                        <div class="col-9 item-details">
-                            <a href="#">
-                                <h5 class="inner">More Than 120 ER Visits Linked To Synthetic WordPress In
-                                    NYC...</h5>
-                            </a>
-                            <div class="td-post-date">Jan 22, 2019</div>
-                        </div>
-
-                    </div>
-
                 </div>
-
-                <div class="sub-one-left col-lg-4 col-md-6 mt-lg-0 mt-md-5">
-                    <h6>Information</h6>
-                    <div class="columns-2 d-flex">
-                        <ul class="footer-sub-gd mr-5">
-                            <li><a href="#">Celebrities</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="lifestyle.html">Lifestyle</a></li>
-                            <li><a href="#">Blog Page</a></li>
-                        </ul>
-                        <ul class="footer-sub-gd">
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Signup</a></li>
-                            <li><a href="#">Author</a></li>
-                            <li><a href="#">Comments</a></li>
-                        </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                <div class="top-pic3">
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc"> Right food baked with natural ingredient, the use of best quality products
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Elizabeth</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <div class="below-section">
-        <div class="container">
-            <div class="copyright-footer text-center">
-
-                <p>© 2020 Webzine. All rights reserved.| Design by
-					<a href="http://w3layouts.com/" target="_blank">W3layouts</a>
-                </p>
+    </div>
+</div>
+<div class="w3l-homeblock2 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="left-right">
+            <h3 class="section-title-left mb-sm-4 mb-2"> Fashion and style</h3>
+            <a href="fashiom.html" class="more btn btn-small mb-sm-0 mb-4">View more</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 item">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="assets/images/fashion1.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">An easy Guide to buying Denim & My favourite styles
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Isabella ava</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="assets/images/fashion2.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">The Satin Skirt & How to Wear it all year round fashion
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Charlotte mia</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="assets/images/fashion3.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">What I’ll be Wearing this Party Season & the Festive edit
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Elizabeth</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- move top -->
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-            <span class="fa fa-arrow-up" aria-hidden="true"></span>
-        </button>
-        <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("movetop").style.display = "block";
-                } else {
-                    document.getElementById("movetop").style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-        <!-- /move top -->
     </div>
-    <!-- copyright -->
+</div>
+<div class="w3l-homeblock2 w3l-homeblock5 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="left-right">
+            <h3 class="section-title-left mb-sm-4 mb-2"> Beauty</h3>
+            <a href="beauty.html" class="more btn btn-small mb-sm-0 mb-4">View more</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/beauty1.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">Natural Spa - Where you feel unique and special
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Isabella ava</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/beauty2.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">How to get Beautiful coloring Highlights this weak
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Charlotte mia</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/beauty3.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">New Hair Styles can look fabulous and shiny
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Elizabeth</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/beauty4.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">How our dreams should shine and spray beauty to us.</a>
+                            <div class="author align-items-center">
+                                <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Isabella ava</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-homeblock2 w3l-homeblock6 py-5">
+    <div class="container-fluid px-sm-5 py-lg-5 py-md-4">
+        <!-- block -->
+            <h3 class="section-title-left mb-4"> Trending Now</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-6 position-relative">
+                            <a href="#blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/trending1.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 card-body blog-details align-self">
+                            <span class="label-blue">Sports</span>
+                            <a href="#blog-single.html" class="blog-desc">Playing footbal with your feet is one thing.
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
+                                vitae sit.</p>
+                            <div class="author align-items-center mt-3">
+                                <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Charlotte mia</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-6 position-relative">
+                            <a href="#blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="assets/images/trending2.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 card-body blog-details align-self">
+                            <span class="label-blue">Fitness</span>
+                            <a href="#blog-single.html" class="blog-desc">Experience the state of the art fitness! Fitness on Track </a>
+                            <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
+                                vitae sit.</p>
+                            <div class="author align-items-center mt-3">
+                                <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">ELizabeth</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-subscribe py-5">
+    <div class="container py-lg-5 py-md-4">
+        <div class="w3l-subscribe-content text-center bg-clr-white py-md-5 py-2">
+            <div class="py-5">
+                <h3 class="section-title-left mb-2">Subscribe to our newsletter!</h3>
+                <p class="mb-md-5 mb-4">We'll send you the best of our blog just once a month. We promise. </p>
+                <form action="#" method="GET" class="subscribe">
+                    <input type="email" class="subscribe_input" name="search" placeholder="Email address" required="">
+                    <button class="btn btn-style btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer-28 block -->
+<section class="app-footer">
+  <footer class="footer-28 py-5">
+    <div class="footer-bg-layer">
+      <div class="container py-lg-3">
+        <div class="row footer-top-28">
+          <div class="col-lg-4 footer-list-28 copy-right mb-lg-0 mb-sm-5 mt-sm-0 mt-4">
+            <a class="navbar-brand mb-3" href="index.html">
+              <span class="fa fa-newspaper-o"></span> NewsBlog</a>
+            <p class="copy-footer-28"> © 2020. All Rights Reserved. </p>
+            <h5 class="mt-2">Design by <a href="https://w3layouts.com/">W3Layouts</a></h5>
+          </div>
+          <div class="col-lg-8 row">
+            <div class="col-sm-4 col-6 footer-list-28">
+              <h6 class="footer-title-28">Useful links</h6>
+              <ul>
+                <li><a href="#categories">food blogs</a></li>
+                <li><a href="#advertise">Advertise with us</a></li>
+                <li><a href="#authors">Our Authors</a></li>
+                <li><a href="contact.html">Get in touch</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-6 footer-list-28">
+              <h6 class="footer-title-28">Categories</h6>
+              <ul>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="fashion.html">Fashion and Style</a></li>
+                <li><a href="#food"> Food and Wellness</a></li>
+                <li><a href="#lifestyle">Lifestyle</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-6 footer-list-28 mt-sm-0 mt-4">
+              <h6 class="footer-title-28">Social Media</h6>
+              <ul class="social-icons">
+                <li class="facebook">
+                  <a href="#facebook"><span class="fa fa-facebook"></span> Facebook</a></li>
+                <li class="twitter"> <a href="#twitter"><span class="fa fa-twitter"></span> Twitter</a></li>
+                <li class="linkedin"> <a href="#linkedin"><span class="fa fa-linkedin"></span> Linkedin</a></li>
+                <li class="dribbble"><a href="#dribbble"><span class="fa fa-dribbble"></span> Dribbble</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+</section>
+<!-- //footer-28 block -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- Template JavaScript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- theme changer js -->
+<script src="assets/js/theme-change.js"></script>
+<!-- //theme changer js -->
+
+<!-- courses owlcarousel -->
+<script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for testimonials -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for testimonials -->
+
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- LOgin signup modal -->
 
 
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+<!-- Button trigger modal -->
 
-</footer>
-<!--//footer-66 -->
+<div class="container"> 
+    
+    <br>
+    <center>
+   
+  <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".log-sign">Sign In/Register</button>
+  </center>
+  <br>
+    
+
+  </div>
+
+<!-- Modal -->
+<div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+              <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+              
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+       
+        <div class="tab-pane active show" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+              
+               <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Username</label>
+</div>
+              
+              
+            <!-- Password input-->
+            <div class="group">
+<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Password</label>
+    </div>
+<em>minimum 6 characters</em>
+
+           <div class="forgot-link">
+            <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+            </div>
+            
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+          
+          
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">First Name</label></div>
+            
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Last Name</label></div>
+            
+            <!-- Password input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email</label></div>
+            
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Password</label></div>
+              <em>1-8 Characters</em>
+            
+              <div class="group2">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Country</label></div>
+            
+            
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <!--<div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>-->
+    </div>
+  </div>
+</div>
+  
+   
+
+<!--modal2-->
+
+<div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+        <fieldset>
+        <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email address</label></div>
+        
+        
+        <div class="control-group">
+              <label class="control-label" for="forpassword"></label>
+              <div class="controls">
+                <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+              </div>
+            </div>
+          </fieldset>
+            </form>
+          
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+    $(window, document, undefined).ready(function() {
+
+$('.input').blur(function() {
+  var $this = $(this);
+  if ($this.val())
+    $this.addClass('used');
+  else
+    $this.removeClass('used');
+});
+
+});
+
+
+$('#tab1').on('click' , function(){
+  $('#tab1').addClass('login-shadow');
+ $('#tab2').removeClass('signup-shadow');
+});
+
+$('#tab2').on('click' , function(){
+  $('#tab2').addClass('signup-shadow');
+ $('#tab1').removeClass('login-shadow');
+
+
+});
+</script>
 </body>
 
 </html>
